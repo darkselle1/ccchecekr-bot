@@ -43,11 +43,11 @@ import bs4
 import json
 
 
-mongourl = 'MONGO_URI'
+mongourl = 'mongodb+srv://darkselle1:<password>@cluster0.xd5oe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 client = pymongo.MongoClient(mongourl,serverSelectionTimeoutMS=5000)
 maindb = client.bot['main']
 
-antidb = redis.Redis(host='REDIS_URI', port=REDIS_PASS, password='REDIS_PASS')
+antidb = redis.Redis(host='redis-13645.c266.us-east-1-3.ec2.cloud.redislabs.com', port=13645, password='Cul1t62uVsON0wjcveRC6vx7jZmUwjls')
 
 BOT_USERNAME = 'BOT_USERNAME'
 loggp = -735069168
@@ -56,7 +56,7 @@ banned_bins = open('files/bannedbin.txt', 'r').readlines()
 admins = open('files/admins.txt', 'r').readlines()
 verified_gps = open('files/groups.txt', 'r').readlines()
 
-group_not_allowed = """<b>This Group Is Not Verified. Talk With <code>@r0ld3x</code> And Take Verification.</b>"""
+group_not_allowed = """<b>This Group Is Not Verified. Talk With <code>@shadowdemin</code> And Take Verification.</b>"""
 use_not_registered = """<b>Register Yourself To Use Me. Hit /register To Register Yourself</b>"""
 buy_premium = """<b>Take Paid Plan To Use Me In Private Mode. Hit /buy To See My Premium Plans</b>"""
 free_user = """<b>buy paid plan to use this gate hit /buy to see my premium plans</b>"""
